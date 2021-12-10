@@ -1,0 +1,109 @@
+{
+  "cities":[
+    {
+      "name": "Santo Domingo",
+      "Lat": "18.47186",
+      "Long": "-69.89232"
+    },
+    {
+      "name": "Santiago de los Caballeros",
+      "Lat": "19.4517",
+      "Long": "-70.69703"
+    },
+    {
+      "name": "Santo Domingo Oeste",
+      "Lat": "18.5",
+      "Long": "-70"
+    },
+    {
+      "name": "Santo Domingo Este",
+      "Lat": "18.48847",
+      "Long": "-69.85707"
+    },
+    {
+      "name": "San Pedro de Macorís",
+      "Lat": "18.4539",
+      "Long": "-69.30864"
+    },
+    {
+      "name": "La Romana",
+      "Lat": "18.42733",
+      "Long": "-68.97285"
+    },
+    {
+      "name": "San Cristóbal",
+      "Lat": "18.41667",
+      "Long": "-70.1"
+    },
+    {
+      "name": "Puerto Plata",
+      "Lat": "19.79344",
+      "Long": "-70.6884"
+    },
+    {
+      "name": "Bonao",
+      "Lat": "18.93687",
+      "Long": "-70.40923"
+    },
+    {
+      "name": "San Juan de la Maguana",
+      "Lat": "18.80588",
+      "Long": "-71.22991"
+    },
+    {
+      "name": "Baní",
+      "Lat": "18.27964",
+      "Long": "-70.33185"
+    },
+    {
+      "name": "Mao",
+      "Lat": "19.55186",
+      "Long": "-71.07813"
+    },
+    {
+      "name": "Moca",
+      "Lat": "19.39352",
+      "Long": "-70.52598"
+    },
+    {
+      "name": "Salcedo",
+      "Lat": "19.37762",
+      "Long": "-70.41762"
+    },
+    {
+      "name": "Azua",
+      "Lat": "18.45319",
+      "Long": "-70.7349"
+    },
+    {
+      "name": "Bella Vista",
+      "Lat": "18.45539",
+      "Long": "-69.9454"
+    },
+    {
+      "name": "Cotuí",
+      "Lat": "19.05272",
+      "Long": "-70.14939"
+    },
+    {
+      "name": "Nagua",
+      "Lat": "19.3832",
+      "Long": "-69.8474"
+    },
+    {
+      "name": "Dajabón",
+      "Lat": "19.54878",
+      "Long": "-71.70829"
+    },
+    {
+      "name": "Sabaneta",
+      "Lat": "19.47793",
+      "Long": "-71.34125"
+    },
+    {
+      "name": "San José de Ocoa",
+      "Lat": "18.54661",
+      "Long": "-70.50631"
+    }
+  ]
+}

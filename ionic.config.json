@@ -1,0 +1,7 @@
+{
+  "name": "Business Loger",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

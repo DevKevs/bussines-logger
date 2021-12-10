@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-back-sharp"(click)="dismiss()" style="width: 30px; height: 30px;"></ion-icon>
+    </ion-buttons>
+    <ion-title>{{bss.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-list>
+      <h3 style="padding: 15px;"><b>Editar {{bss.name}}</b></h3>
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input [(ngModel)]="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Tipo</ion-label>
+        <ion-select value="Tienda" okText="Okay" cancelText="Cancelar" [(ngModel)]="type">
+          <ion-select-option value="Tienda">Tienda</ion-select-option>
+          <ion-select-option value="Comida rapida">Comida rapida</ion-select-option>
+          <ion-select-option value="Repuesto">Repuesto</ion-select-option>
+          <ion-select-option value="Restaurante">Restaurante</ion-select-option>
+          <ion-select-option value="Bar">Bar</ion-select-option>
+          <ion-select-option value="Farmacia">Farmacia</ion-select-option>
+          <ion-select-option value="Electonica">Electonica</ion-select-option>
+          <ion-select-option value="Dealer">Dealer</ion-select-option>
+          <ion-select-option value="Dulceria">Dulceria</ion-select-option>
+          <ion-select-option value="Computacion y servivios">Computacion y servivios</ion-select-option>
+          <ion-select-option value="Manufactura">Manufactura</ion-select-option>
+          <ion-select-option value="Telecomunicaciones">Telecomunicaciones</ion-select-option>
+          <ion-select-option value="Agroindustrial">Agroindustrial</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label>Foto</ion-label>
+        <ion-icon slot="end" name="image" (click)="presentAlertConfirm()"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Direccion</ion-label>
+        <ion-input [(ngModel)]="address"></ion-input>
+      </ion-item>
+      <div style="padding: 10px;">
+        <ion-button expand="block" (click)="updateBussines()">Actualizar <ion-icon name="create"></ion-icon></ion-button>
+      </div>
+      <div style="padding: 10px;"><img style="border-radius: 10px; width: 100%;" [src]="base64Image"></div>
+    </ion-list>
+  </ion-card>
+</ion-content>

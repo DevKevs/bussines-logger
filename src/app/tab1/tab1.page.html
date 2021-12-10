@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tus Negocios
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="reloadBussines($event)">
+    <ion-refresher-content>
+
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list>
+    <ion-item-sliding *ngFor="let i of data">
+      <ion-item-options side="start">
+        <ion-item-option (click)="modal(i)">Editar</ion-item-option>
+      </ion-item-options>
+
+      <ion-item>
+        <ion-card>
+          <div style="padding: 0%;">
+            <img style="width: 100%;" [src]="i.photo" alt="">
+          </div>
+          <ion-card-header>
+            <ion-card-subtitle style="color: green;">{{i.typeOfBussiness}}</ion-card-subtitle>
+            <ion-card-title>{{i.name}}</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            {{i.address}}
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="presentAlertConfirm(i._id)">Borrar</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
+
